@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    
+</head>
+<body>
+    <div class="box flex">
+        <div class="display">
+            <input class="input" id="disp" type="text">
+        </div>
+        <div class="row">
+            <button class="button green" onclick="pop()">C</button>
+            <button class="button green" onclick="del()">DE</button>
+            <button class="button"onclick="push('%')">%</button>
+            <button class="button"onclick="push('/')">/</button>
+        </div>
+        <div class="row">
+            <button class="button"onclick="push('7')">7</button>
+            <button class="button"onclick="push('8')">8</button>
+            <button class="button"onclick="push('9')">9</button>
+            <button class="button"onclick="push('*')">X</button>
+        </div>
+        <div class="row">
+            <button class="button"onclick="push('4')">4</button>
+            <button class="button"onclick="push('5')">5</button>
+            <button class="button"onclick="push('6')">6</button>
+            <button class="button"onclick="push('-')">-</button>
+        </div>
+        <div class="row">
+            <button class="button"onclick="push('1')">1</button>
+            <button class="button"onclick="push('2')">2</button>
+            <button class="button"onclick="push('3')">3</button>
+            <button class="button"onclick="push('+')">+</button>
+        </div>
+        <div class="row">
+            <button class="button"onclick="push('00')">00</button>
+            <button class="button"onclick="push('0')">0</button>
+            <button class="button"onclick="push('.')">.</button>
+            <button class="button orange"onclick="solve()">=</button>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
